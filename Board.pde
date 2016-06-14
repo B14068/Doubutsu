@@ -21,6 +21,10 @@ class Board {
     if(koma==null){
       komaList.select(x,y);
     }else{
+<<<<<<< HEAD
+      koma.move(x,y);
+=======
+>>>>>>> refs/remotes/origin/master
       koma.kStat.selected=false;
     }
   }
