@@ -12,6 +12,11 @@ class MochigomaArea extends AbstractArea {
     } else {
       text("Right turn ->", (posX+yoko-1.7)*SQUARESIZE, (posY+0.5)*SQUARESIZE);
     }
+    for (int i=posX; i<posX+yoko; i++) {
+      for (int j=posY; j<posY+tate; j++) {
+        fill(#dddddd);
+        rect(i*SQUARESIZE, j*SQUARESIZE, SQUARESIZE, SQUARESIZE);
+      }
+    }
   }
-
 }
